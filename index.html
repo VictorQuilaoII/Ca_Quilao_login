@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style_login.css">
+  <link rel="stylesheet" type="text/css" href="spritestyles.css">
+</head>
+<body>
+  <header class="container-flex bg-dark">
+    <nav>
+      <span>
+        <a href="#" class="logo"><h3>Company Logo</h3></a>
+        <a class="links" href="#">CONTACT</a> <a class="links" href="#">ABOUT</a> <a class="links" href="#">HOME</a>
+      </span>
+    </nav>
+  </header><br><br>
+
+  <h1 class="text-center w-50% text-success">Student Mental Health</h1>
+  <p class="text-center w-50% text-white">Join us as you learn more about the problems students constantly face and<br>how they deal with those problems, whether it's good for them or not. Understand<br>with us about the importance of students' mental health as they<br>lead the future that awaits us.</p><br>
+
+  <button class="loginButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+  <div id="id01" class="modal">
+  
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="img_avatar.png" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input class="uName" type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input class="pWord" type="password" placeholder="Enter Password" name="psw" required>
+        
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+
+  <footer class="container-flex bg-dark text-center text-white">
+    <p class="py-0 my-0px">Contact Us:</p>
+    <a href="https://www.facebook.com/coey.quilao.5/"><span class="sprite"></span></a>
+    <a href="mailto:victorii.quilao@smc.pshs.edu.ph?subject=subject text"><span class="sprite2"></span></a>
+    <p class="py-0 my-0px" class="refTitle">References:</p>
+    <p><span class="reference">www.dummywebsite.com</span><span class="reference">www.dummywebsite.com</span><span class="reference">www.dummywebsite.com</span></p>
+  </footer>
+
+  <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>

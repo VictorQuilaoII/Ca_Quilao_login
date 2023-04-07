@@ -1,0 +1,31 @@
+.sprite {
+	background: url('icon.png') no-repeat -18px -75px;
+	width: 29px;
+	height: 28px;
+	padding: 0;
+	float: left;
+	margin-left: 45%;
+}
+.sprite:hover {
+	background: url('icon.png') no-repeat -18px -120px;
+	width: 29px;
+	height: 28px;
+	padding: 0;
+}
+
+.sprite2 {
+	z-index: 1;
+	background: url('icon.png') no-repeat -95px -78px;
+	width: 29px;
+	height: 28px;
+	padding: 0;
+	float: right;
+	margin-right: 45%;
+}
+
+.sprite2:hover {
+	background: url('icon.png') no-repeat -95px -120px;
+	width: 29px;
+	height: 28px;
+	padding: 0;
+}
